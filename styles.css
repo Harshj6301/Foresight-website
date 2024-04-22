@@ -132,6 +132,14 @@ nav a {
     }
 }
 
+.ref {
+    display: flex;
+    align-items: center;
+    margin-left: 660px;
+    margin-top: 10px;
+}
+
+
 /* Hero Section Styles */
 .hero-section {
     position: relative;
