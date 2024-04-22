@@ -5,6 +5,14 @@ body, h1, h2, p, ul, li {
     box-sizing: border-box;
 }
 
+/* Font face */
+@font-face {
+    font-family: 'Logirent';
+    src: url(Assets/Fonts/logirent/ttf/logirent-logirent-regular-400.ttf);
+    font-family: 'Solaris';
+    src: url(Assets/Fonts/Solaris/Solaris.ttf);
+}
+
 /* Body Styles */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -24,6 +32,105 @@ header {
     align-items: center; /* Vertically center logo and title */
 }
 
+h1 {
+    font-family: 'Logirent';
+    font-size: 1.5em; /* Adjust the font size as needed */
+    margin-right: 10px; /* Add space between the logo and the title */
+    margin-left: 10px;
+}
+
+h2 {
+    font-family: 'Solaris';
+    font-size: 1.5em; /* Adjust the font size as needed */
+    margin-right: 10px; /* Add space between the logo and the title */
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use default font for paragraphs */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    display: flex; /* Allow logo and navigation to align side-by-side */
+    align-items: center; /* Align items based on the baseline of the content */
+    word-spacing: 10px;
+  }
+  
+  .container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color: inherit;
+  }
+  
+.title {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+  
+  h1 {
+    margin: 5px; /* Remove default margin */
+  }
+
+nav {
+    list-style: none; /* Remove default bullet points */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+nav li {
+    display: inline-block; /* Display menu items inline */
+    margin-right: 20px; /* Add spacing between menu items */
+}
+
+nav a {
+    color: #fff; /* White text color for menus */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make menus bolder for readability */
+}
+
+.glow {
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #8A2BE2; /* Purple glow */
+    }
+    to {
+        text-shadow: 0 0 20px #8A2BE2; /* Increased glow */
+    }
+}
+
+.glown {
+    animation: glown 1.5s infinite alternate;
+}
+
+@keyframes glown {
+    from {
+        text-shadow: 0 0 10px #fff; /* White glow */
+    }
+    to {
+        text-shadow: 0 0 30px #fff; /* Increased glow */
+    }
+}
+
+/* Hero Section Styles */
 .hero-section {
     position: relative;
     height: 400px; /* Adjust the height of the hero section */
@@ -57,88 +164,6 @@ header {
 
 .hero-content p {
     font-size: 1.5em;
-}
-
-
-.container {
-    display: flex; /* Allow logo and navigation to align side-by-side */
-    align-items: center; /* Vertically center logo and title */
-}
-
-nav {
-    list-style: none; /* Remove default bullet points */
-    margin: 0; /* Remove default margin */
-    padding: 0; /* Remove default padding */
-}
-
-nav li {
-    display: inline-block; /* Display menu items inline */
-    margin-right: 20px; /* Add spacing between menu items */
-}
-
-nav a {
-    color: #fff; /* White text color for menus */
-    text-decoration: none; /* Remove underline */
-    font-weight: bold; /* Make menus bolder for readability */
-}
-
-header h1 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #fff;
-}
-
-header p {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.glow {
-  animation: glow 1.5s infinite alternate;
-}
-
-@keyframes glow {
-  from {
-    text-shadow: 0 0 10px #FFFF00; /* Purple glow */
-  }
-  to {
-    text-shadow: 0 0 20px #8A2BE2; /* Increased glow */
-  }
-}
-
-
-/* Logo Styles */
-#logo {
-    height: 50px;
-    border-radius: 40%;
-}
-#namelogo {
-    height: 30px;
-}
-
-/* Main Content Styles */
-main {
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    font-size: 2em;
-    color: #ddd;
-    margin-bottom: 20px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
 }
 
 /* Call-to-Action Styles */
