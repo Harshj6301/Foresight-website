@@ -9,6 +9,8 @@ body, h1, h2, p, ul, li {
 @font-face {
     font-family: 'Logirent';
     src: url(Assets/Fonts/logirent/ttf/logirent-logirent-regular-400.ttf);
+}
+@font-face {
     font-family: 'Solaris';
     src: url(Assets/Fonts/Solaris/Solaris.ttf);
 }
