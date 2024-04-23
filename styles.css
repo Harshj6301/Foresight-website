@@ -5,7 +5,7 @@ body, h1, h2, p, ul, li {
     box-sizing: border-box;
 }
 
-/* Font face */
+/* Font face, font install and load */
 @font-face {
     font-family: 'logirent';
     src: url(Assets/Fonts/logirent/ttf/logirent-logirent-bold-700.ttf);
@@ -58,13 +58,15 @@ p {
     margin: 0; /* Remove default margin */
 }
 
+/* class container styles */
+
 .container {
     display: flex; /* Allow logo and navigation to align side-by-side */
     align-items: center; /* Align items based on the baseline of the content */
     word-spacing: 10px;
   }
   
-  .container a {
+.container a {
     display: flex;
     align-items: center;
     text-decoration: none; 
@@ -84,10 +86,6 @@ p {
     align-items: center;
     height: 50px;
 }
-  
-  h1 {
-    margin: 5px; /* Remove default margin */
-  }
 
 nav {
     list-style: none; /* Remove default bullet points */
@@ -140,10 +138,31 @@ nav a {
     margin-top: 10px;
 }
 
+/* a href style for down endurance link text*/
 a {
     color: inherit; /* Inherit color from parent */
     text-decoration: none; /* Remove underline */
 }
+
+.embed {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+/* Features site style */
+#features {
+    padding: 50px;
+  }
+  
+  #features h2 {
+    text-align: left;
+  }
+  
+  #features ul {
+    list-style-type: disc;
+    padding: 0;
+  }
 
 /* Hero Section Styles */
 .hero-section {
@@ -201,7 +220,7 @@ a {
 }
 
 .cta-button {
-    background-color: #555; /* Darker button */
+    background-color: #000500; /* Darker button */
     color: #fff;
     padding: 15px 40px;
     border: none;
